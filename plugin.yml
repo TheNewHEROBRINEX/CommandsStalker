@@ -1,0 +1,24 @@
+name: "CommandsStalker"
+author: "TheNewHEROBRINE"
+api: ["1.13.1", "2.0.0"]
+version: 1.1.0
+main: TheNewHEROBRINE\CommandsStalker\Main
+
+permissions:
+ commandsstalker:
+  default: false
+  children:
+   commandsstalker.see.all:
+    default: false
+    children:
+     commandsstalker.see.password:
+      default: op
+     commandsstalker.see.tell:
+      default: op
+   commandsstalker.exempt.all:
+    default: false
+    children:
+     commandsstalker.exempt.password:
+      default: op
+     commandsstalker.exempt.tell:
+      default: false
